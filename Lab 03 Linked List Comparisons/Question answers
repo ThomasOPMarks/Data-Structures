@@ -1,0 +1,30 @@
+Question 1:
+Best performance for adding at the head:
+Linked List, DLinkedList (hard to tell due to noise).
+Worst:
+array list.
+
+Best performance for removing tail:
+DLinkedList and ArrayList:
+Worst:
+Linked list:
+
+2. 
+
+The reason the two lists are good for adding at the head is because
+they only need to change pointers, and that doesn't depend on the 
+size of the lists, while the ArrayList needs to allocate new 
+arrays all the time to keep adding and shifting all the time.
+
+The reason the ArrayList and the DLinkedList are good at removing the 
+tail are different.
+
+The ArrayList knows where everything is because the elements are indexed
+
+The DlinkedList can traverse from the end to quickly remove the last
+element from the list
+
+The LinkedList is bad because it need to go the full list to remove the tail,
+which depends on the size of the list.
+
+
